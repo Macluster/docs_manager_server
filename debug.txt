@@ -1,0 +1,99 @@
+folder found66ac88691ab61a1cb6f72d88
+[ { _id: new ObjectId('66ac89771ab61a1cb6f73035') } ]
+folder found66ac89771ab61a1cb6f73035
+[ { _id: new ObjectId('66ac89771ab61a1cb6f73036') } ]
+folder found66ac89771ab61a1cb6f73036
+paaaaaaaaaaaaa
+66ac89771ab61a1cb6f73036
+-----------------------------------File ---------------------------------------
+ POST /api/uploadData 200 in 7ms
+/storage/emulated/0/DCIM/MyAlbums/farewel/IMG_5261.jpg
+[ 'DCIM', 'MyAlbums', 'farewel' ]
+[ { _id: new ObjectId('66ac88691ab61a1cb6f72d88') } ]
+folder found66ac88691ab61a1cb6f72d88
+[ { _id: new ObjectId('66ac89771ab61a1cb6f73035') } ]
+folder found66ac89771ab61a1cb6f73035
+[ { _id: new ObjectId('66ac89771ab61a1cb6f73036') } ]
+folder found66ac89771ab61a1cb6f73036
+paaaaaaaaaaaaa
+66ac89771ab61a1cb6f73036
+-----------------------------------File ---------------------------------------
+ POST /api/uploadData 200 in 65ms
+/storage/emulated/0/DCIM/MyAlbums/farewel/IMG_9190.jpg
+[ 'DCIM', 'MyAlbums', 'farewel' ]
+-----------------------------------File ---------------------------------------
+ POST /api/uploadData 200 in 14ms
+[ { _id: new ObjectId('66ac88691ab61a1cb6f72d88') } ]
+folder found66ac88691ab61a1cb6f72d88
+[ { _id: new ObjectId('66ac89771ab61a1cb6f73035') } ]
+folder found66ac89771ab61a1cb6f73035
+[ { _id: new ObjectId('66ac89771ab61a1cb6f73036') } ]
+folder found66ac89771ab61a1cb6f73036
+paaaaaaaaaaaaa
+66ac89771ab61a1cb6f73036
+undefined
+Error: Unexpected end of form
+    at Multipart._final (/home/deepu/Coding/Nextjs/docs_manager/node_modules/busboy/lib/types/multipart.js:588:17)
+    at prefinish (node:internal/streams/writable:907:14)
+    at finishMaybe (node:internal/streams/writable:921:5)
+    at Writable.end (node:internal/streams/writable:836:5)
+    at IncomingMessage.onend (node:internal/streams/readable:946:10)
+    at Object.onceWrapper (node:events:633:28)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  storageErrors: []
+}
+ ⨯ uncaughtException: Error: Unexpected end of form
+    at Multipart._final (/home/deepu/Coding/Nextjs/docs_manager/node_modules/busboy/lib/types/multipart.js:588:17)
+    at prefinish (node:internal/streams/writable:907:14)
+    at finishMaybe (node:internal/streams/writable:921:5)
+    at Writable.end (node:internal/streams/writable:836:5)
+    at IncomingMessage.onend (node:internal/streams/readable:946:10)
+    at Object.onceWrapper (node:events:633:28)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  storageErrors: []
+}
+ ⨯ uncaughtException: Error: Unexpected end of form
+    at Multipart._final (/home/deepu/Coding/Nextjs/docs_manager/node_modules/busboy/lib/types/multipart.js:588:17)
+    at prefinish (node:internal/streams/writable:907:14)
+    at finishMaybe (node:internal/streams/writable:921:5)
+    at Writable.end (node:internal/streams/writable:836:5)
+    at IncomingMessage.onend (node:internal/streams/readable:946:10)
+    at Object.onceWrapper (node:events:633:28)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  storageErrors: []
+}
+TypeError: Cannot read properties of undefined (reading 'split')
+    at Createfolders (webpack-internal:///(api)/./pages/api/uploadData.ts:62:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async eval (webpack-internal:///(api)/./pages/api/uploadData.ts:128:24)
+ ⨯ pages/api/uploadData.ts (77:23) @ split
+ ⨯ unhandledRejection: TypeError: Cannot read properties of undefined (reading 'split')
+    at Createfolders (webpack-internal:///(api)/./pages/api/uploadData.ts:62:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async eval (webpack-internal:///(api)/./pages/api/uploadData.ts:128:24)
+  75 |   else
+  76 |   {
+> 77 |     var  folders=path.split("emulated")[1].split('/')
+     |                       ^
+  78 |     folders=folders.filter(item=>item!="0")
+  79 |     folders.pop()
+  80 |     folders.shift()
+ ⨯ pages/api/uploadData.ts (77:23) @ split
+ ⨯ unhandledRejection: TypeError: Cannot read properties of undefined (reading 'split')
+    at Createfolders (webpack-internal:///(api)/./pages/api/uploadData.ts:62:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async eval (webpack-internal:///(api)/./pages/api/uploadData.ts:128:24)
+  75 |   else
+  76 |   {
+> 77 |     var  folders=path.split("emulated")[1].split('/')
+     |                       ^
+  78 |     folders=folders.filter(item=>item!="0")
+  79 |     folders.pop()
+  80 |     folders.shift()
+^C
