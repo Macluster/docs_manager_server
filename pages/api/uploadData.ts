@@ -6,10 +6,11 @@ import { Console } from "console";
 const jwt = require('jsonwebtoken')
 const { MongoClient } = require('mongodb');
 
+const uploadsDir = "/home/deepu/Coding/Nextjs/docs_manager/uploads/"
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, '/home/deepu/Coding/Nextjs/docs_manager/uploads/'); // Directory to save files
+    cb(null, uploadsDir); // Directory to save files
   },
   filename: (req, file, cb) => {
   
@@ -21,7 +22,7 @@ const upload = multer({ storage: storage,limits: { fileSize: 100 * 1024 * 1024 }
 
 // Create an 'uploads' directory if it doesn't exist
 const fs = require('fs');
-const uploadsDir = "/home/deepu/Coding/Nextjs/docs_manager/uploads/"
+
 console.log(uploadsDir)
 try {
 
